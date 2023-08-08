@@ -1,3 +1,6 @@
+import Model.Employee;
+import Model.Kitchen;
+
 import java.util.ArrayList;
 
 public class Store {
@@ -10,7 +13,7 @@ public class Store {
 
     Kitchen kitchen;
 
-    public Store(String storeName){
+    public Store(String storeName) {
         this.storeName = storeName;
         employeeCount = 0;
         kitchen = new Kitchen();
@@ -21,18 +24,28 @@ public class Store {
         return storeName;
     }
 
-    protected void addEmployee(String employeeName){
-        employees.add(new Employee(employeeName, idValue));
-        this.idValue += 1;
-        employeeCount += 1;
+    public void addEmployee(String employeeName) {
+
+    }
+
+    public void viewEmployees() {
+
+    }
+
+    public void updateEmployee(int employeeId) {
+
+    }
+
+    public void removeEmployee(int employeeId) {
+
     }
 
 
-    protected int getEmployeeCount(){
+    protected int getEmployeeCount() {
         return this.employeeCount;
     }
 
-    protected void showStoreMenu(){
+    protected void showStoreMenu() {
         // TODO: Add store menu
     }
 
